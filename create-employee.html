@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="create-employee.css" />
+    <link rel="icon" type="image/x-icon" href="/favicon.svg" />
+
+    <title>Employee List</title>
+  </head>
+  <body>
+    <div class="layout">
+      <header>
+        <img src="logo.svg" alt="KeyValue Logo" id="logo" />
+      </header>
+      <div class="body-container">
+        <aside>
+          <div class="employee-menu">
+            <div class="employee-icon">
+              <img
+                src="people-icon.svg"
+                alt="Employee Icon"
+                class="menu-icon"
+              />
+            </div>
+            <span>Create Employee</span>
+          </div>
+        </aside>
+        <main>
+          <section class="title-section">
+            <h1>Create Employee</h1>
+          </section>
+
+          <section class="form-section">
+            <form>
+              <div class="form-inputs">
+                <div class="input-container">
+                  <label for="name">Employee Name</label>
+                  <input type="text" id="name" placeholder="Employee Name" />
+                </div>
+
+                <div class="input-container">
+                  <label for="id">Employee ID</label>
+                  <input type="text" id="id" placeholder="Employee ID" />
+                </div>
+
+                <div class="input-container">
+                  <label for="joiningdate">Joining Date</label>
+                  <input
+                    type="date"
+                    id="joiningdate"
+                    placeholder="Joining Date"
+                  />
+                </div>
+
+                <div class="input-container">
+                  <label for="role">Role</label>
+                  <select id="role" placeholder="Choose Role">
+                    <option value="" disabled selected>Choose Role</option>
+                    <option value="manager">Manager</option>
+                    <option value="developer">Developer</option>
+                    <option value="designer">Designer</option>
+                  </select>
+                </div>
+
+                <div class="input-container">
+                  <label for="status">Status</label>
+                  <select id="status" placeholder="Choose Status">
+                    <option value="" disabled selected>Choose Status</option>
+                    <option value="active">Active</option>
+                    <option value="inactive">Inactive</option>
+                  </select>
+                </div>
+
+                <div class="input-container">
+                  <label for="experience">Experience</label>
+                  <input type="text" id="experience" placeholder="Experience" />
+                </div>
+
+                <div class="input-container">
+                  <label for="address">Address</label>
+                  <div class="address-container">
+                    <input type="text" id="address" placeholder="Address" />
+                    <input type="text" id="city" placeholder="City" />
+                    <input type="text" id="country" placeholder="Country" />
+                    <input
+                      type="text"
+                      id="postalcode"
+                      placeholder="Postal Code"
+                    />
+                  </div>
+                </div>
+
+                <div class="input-container">
+                  <label for="id-proof">Upload ID Proof</label>
+                  <label class="file-upload">
+                    <input type="file" id="id-proof" placeholder="ID Proof" />
+                    <div class="upload-btn">
+                      <img src="attach-icon.svg" alt="Attach Icon" />
+                      <span>Attach files</span>
+                    </div>
+                  </label>
+                </div>
+              </div>
+              <div class="form-buttons">
+                <button type="submit">Create</button>
+                <button type="button">Cancel</button>
+              </div>
+            </form>
+          </section>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>

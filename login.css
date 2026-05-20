@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito", sans-serif;
+}
+
+main {
+  display: flex;
+  align-items: center;
+}
+
+.banner-section {
+  background-color: #e6f7fd;
+  height: calc(100vh - 64px);
+  width: 46.875%;
+  margin: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 53.125%;
+  height: calc(100vh - 64px);
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  gap: 32px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.input-container {
+  position: relative;
+}
+
+.input-container input {
+  height: 50px;
+  width: 460px;
+  border: 1px solid #b4b7bd;
+  border-radius: 8px;
+  padding: 14px 16px;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.input-container label {
+  position: absolute;
+  left: 16px;
+  top: 14px;
+  font-weight: 700;
+  font-size: 16px;
+  color: #b4b7bd;
+  pointer-events: none;
+  transition: 0.2s ease all;
+}
+
+.input-container input:focus + label,
+.input-container input:not(:placeholder-shown) + label {
+  top: -12px;
+  left: 5px;
+  font-size: 12px;
+  color: #03aeee;
+  background: white;
+  padding: 0 4px;
+}
+
+form button {
+  height: 50px;
+  width: 460px;
+  background-color: #03aeee;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #02a0c9;
+  cursor: pointer;
+}
+
+#logo {
+  height: 45px;
+  align-self: start;
+}
